@@ -19,12 +19,14 @@ class Inventario {
 };
 
 class Cliente {
-
+        string cve_cliente;
+        string nombrec;  
 };
 
 class Factura{
     public:
         string noFactura;
+        string cve_cliente;
         string cve_vendedor;
         string cve_articulo;
         int cantidad;
@@ -37,14 +39,14 @@ string GETDATE(){
     return out;
 }
 
-void generaFactura(int contadorFactura, &Factura arreglof[],Vendedor v1, Inventario i2, int cant){
+void generaFactura(int contadorFactura, Factura arreglof[],Vendedor v1, Inventario i2, int cant){
  
     Factura f1;
     f1.cve_vendedor = v1.cve_vendedor;
     f1.cve_articulo = i2.cve_articulo;
     f1.cantidad = cant;
     f1.noFactura = "F" + GETDATE();
-    arreglof[1]; 
+    arreglof[1] = f1; 
 
 };
 
@@ -69,7 +71,7 @@ int main(){
     arregloi[2] = i3;
     
     int contadorFactura = 0;
-    generaFactura(contadorFactura,&arreglof, v1, i2, 32);
+    generaFactura(contadorFactura, arreglof, v1, i2, 32);
 
     string nombreArticulo;
     // imprimimos todas las facturas
@@ -81,7 +83,7 @@ int main(){
             if (arreglof[j].cve_articulo == arregloi[k].cve_articulo)
                 nombreArticulo = arregloi[k].descripcion;
         }
-        cout <<arreglof[0].noFactura<<"\t"
+        cout <<arreglof[1].noFactura<<"\t"
             <<arreglov[0].cve_vendedor<<"\t\t"
             <<arregloi[0].cve_articulo<<"\t"
             <<nombreArticulo<<endl;
