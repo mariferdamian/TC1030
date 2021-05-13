@@ -56,19 +56,16 @@ vector<Factura> generaFactura(int contadorFactura, vector<Factura> arreglof,Vend
 
 
 
-vector<Inventario> agregarArticulo(vector<Inventario> arregloi){
-    Inventario articulo;
-    cout<<"Ingrese la clave del articulo"<<endl;
-    cin>>articulo.cve_articulo;
-    cout<<"Ingrese la descripción"<<endl;
-    cin>>articulo.descripcion;
-    cout<<"Ingrese el precio"<<endl;
-    cin>>articulo.precio;
-    arregloi.push_back(articulo);
-    return arregloi;
-}
-
-
+vector <Vendedor> agregarVendedor(vector<Vendedor>arreglov){
+    Vendedor vendedor;
+    cout << "Ingresa nombre del vendedor "<<endl;
+    cin >> vendedor.nombre;
+    cout << "Ingresa clave del vendedor "<<endl;
+    vendedor.cve_vendedor = "v10"+ to_string(arreglov.size());
+    cout << vendedor.cve_vendedor <<endl;
+    arreglov.push_back(vendedor);
+    return arreglov;
+};
 
 int main(){
     vector<Vendedor> arreglov;
