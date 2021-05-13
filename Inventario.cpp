@@ -44,7 +44,7 @@ string GETDATE(){
 vector<Factura> generaFactura(int contadorFactura, vector<Factura> arreglof,Vendedor v1, Inventario i2, int cant){
  
     Factura f1;
-    cout<<"Clave"<<v1.cve_vendedor<<endl;
+   
     f1.cve_vendedor = v1.cve_vendedor;
     f1.cve_articulo = i2.cve_articulo;
     f1.cantidad = cant;
@@ -65,7 +65,7 @@ int main(){
     arreglov.push_back(v1);
     arreglov.push_back(v2);
 
-    cout<<arreglov.size()<<endl;
+    
     // variable i1 y i2
     
     Inventario i1 = {"i500","Tornillo sin fin",10.0};
@@ -77,7 +77,7 @@ int main(){
     
     int contadorFactura = 0;
     arreglof =generaFactura(contadorFactura, arreglof, v1, i2, 32);
-    cout<<arreglof.size()<<endl;
+    
     string nombreArticulo;
     // imprimimos todas las facturas
     cout << "Facturas Generadas "<< endl;
