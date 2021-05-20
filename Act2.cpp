@@ -64,10 +64,12 @@ class Inventario {
 
 
 int main(){
-  Vendedor v1("hola", "hola");
-  Vendedor v2("v100","kiubo");
-  Inventario c1("il", "il", "de", 50);
-  cout<<c1.getInventario()<<" - "<<c1.getNombre()<<c1.getDescripcion()<<c1.getPrecio()<<"\n";
+  Vendedor v2("v100","Kiubo");
+  Inventario i1("il", "il", "de", 50);
+  Cliente c1("c100","Shonpol");
+
+  cout<<i1.getInventario()<<" - "<<i1.getNombre()<<" - "<<i1.getDescripcion()<<" - "<<i1.getPrecio()<<"\n";
+  cout<<v2.getVend()<<" - "<<v2.getNombre();
   cout<<v2.getVend()<<" - "<<v2.getNombre();
   
   return 0;
