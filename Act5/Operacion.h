@@ -1,5 +1,6 @@
 #ifndef Operacion_h
 #define Operacion_h
+<<<<<<< HEAD
 #include <iostream>
 #include <string>
 using namespace std;
@@ -34,3 +35,30 @@ void Operacion::mostrarResultado(){
 
 }
 #endif
+=======
+
+class Operacion {
+    public:
+    int valor1;
+    int valor2;
+    int resultado;
+    void setValor1(int);
+    void setValor2();
+    void mostrarResultado(int);
+
+};
+
+void Operacion::setValor1(int valor1_){
+    valor1 = valor1_;
+};
+
+void Operacion::setValor2(int valor2_){
+    valor2 = valor2_;
+};
+
+void Operacion::mostrarResultado(){
+    cout<<"Valor 1 \t"<<valor1<<"\t Valor 2 \t"<<valor2<<"\t Resultado \t"<<resultado<<endl;
+}
+
+
+>>>>>>> e95078a4ee7129c761eddfa9b2856cb08d5f47e0
