@@ -7,6 +7,7 @@ class Thor: public Character{
         Thor(int);
         void setTraje(int);
         void lanzarMartillo();
+        void poder();
         int getTraje();
 
     protected:
@@ -22,6 +23,9 @@ void Thor::setTraje(int traje_){
 }
 void Thor::lanzarMartillo(){
     cout<<"Lanzar Martillo"<<endl;
+}
+void Thor::poder(){
+    cout<<"Se activo el poder de thor"<<endl;
 }
 int Thor::getTraje(){
     return traje;

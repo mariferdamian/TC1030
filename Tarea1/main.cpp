@@ -41,6 +41,7 @@ int main(){
         cout<<"Level"<<capitanes[i].getLevel()<<endl;
         capitanes[i].jump();
         capitanes[i].run();
+        capitanes[i].poder();
         cout<<"Suit"<<capitanes[i].getTraje()<<endl;
         capitanes[i].lanzarEscudo();
     }
@@ -50,6 +51,7 @@ int main(){
         cout<<"Level"<<thors[i].getLevel()<<endl;
         thors[i].jump();
         thors[i].run();
+        
         cout<<"Suit"<<thors[i].getTraje()<<endl;
         thors[i].lanzarMartillo();
     }

@@ -7,6 +7,7 @@ class Cap: public Character{
         Cap(int);
         void setTraje(int);
         void lanzarEscudo();
+        void poder();
         int getTraje();
 
     protected:
@@ -19,6 +20,9 @@ Cap::Cap(int traje_):Character(){
 void Cap::setTraje(int traje_){
     traje=traje_;
 
+}
+void Cap::poder(){
+    cout<<"Se ha activado el poder del capitan america"<<endl;
 }
 void Cap::lanzarEscudo(){
     cout<<"Lanzar escudo"<<endl;

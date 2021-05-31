@@ -7,6 +7,7 @@ class Ironman: public Character{
         Ironman(int);
         void setTraje(int);
         void volar();
+        void poder();
         int getTraje();
 
     protected:
@@ -22,6 +23,9 @@ void Ironman::setTraje(int traje_){
 }
 void Ironman::volar(){
     cout<<"volar"<<endl;
+}
+void Ironman::poder(){
+    cout<<"Se ha activado el poder de ironman"<<endl;
 }
 int Ironman::getTraje(){
     return traje;

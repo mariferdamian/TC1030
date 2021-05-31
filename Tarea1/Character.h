@@ -9,6 +9,7 @@ class Character{
         
         void jump();
         void run();
+        virtual void poder();
         void setLevel(int);
         int getLevel();    
     protected:
@@ -27,5 +28,8 @@ void Character::jump(){
 
 void Character::run(){
     cout<<"is running"<<endl;
+}
+void Character::poder(){
+    cout<<"Se ha activado el poder de este personaje"<<endl;
 }
 #endif
