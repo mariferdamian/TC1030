@@ -2,7 +2,8 @@
     "files.associations": {
         "html": "",
         "ostream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "algorithm": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
