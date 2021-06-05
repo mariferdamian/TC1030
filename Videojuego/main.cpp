@@ -2,26 +2,23 @@
 #include <string>
 #include <vector>
 #include <variant>
-#include "Marciano.h"
-#include "Taquero.h"
-
-
-
+#include "Witch.h"
+#include "Wizard.h"
 
 int main(){
     
   vector<Personaje*> vectorPersonaje;
   Personaje *objetoPersonaje;
 
-  objetoPersonaje = new Taquero();
+  objetoPersonaje = new Wizard();
   vectorPersonaje.push_back(objetoPersonaje);
 
-  objetoPersonaje = new Marciano();
+  objetoPersonaje = new Witch();
   vectorPersonaje.push_back(objetoPersonaje);
 
   for (int i = 0; i < vectorPersonaje.size(); i++)
   {
-    vectorPersonaje[i]->mostrarLugar();
+    vectorPersonaje[i]->displayHouse();
   }
   vectorPersonaje[1]->addVarita();
   vectorPersonaje[1]->addPocion();

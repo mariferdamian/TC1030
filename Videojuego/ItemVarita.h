@@ -8,7 +8,7 @@ class Varita: public Item{
         void display();
 
     protected:
-        int tipo; // Varita destructora, arregladora y creadora 
+        int tipo; // Varita de enseñanza, creadora, destructora, arregladora
 
 };
 
@@ -21,5 +21,5 @@ Varita::Varita( int t){
 }
 
 void Varita::display(){
-    cout<<tipo<<endl;
+    cout<<"varita "<<tipo<<endl;
 }

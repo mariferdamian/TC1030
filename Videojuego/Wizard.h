@@ -1,11 +1,11 @@
 #include "Personaje.h"
 using namespace std;
 
-class Taquero: public Personaje{
+class Wizard: public Personaje{
     public:
-        Taquero();
+        Wizard();
         void mostrarLugar();
-        //void tacoAsada();
+        void crear();
         //void tacoFrijol();
         //void caramelo();
         //int getPedido(string);
@@ -15,26 +15,26 @@ class Taquero: public Personaje{
 
 };
 
-Taquero::Taquero(){
+Wizard::Wizard(){
     lugar = 0; //mostrar numero de habitacion
 
 }
-void Taquero::mostrarLugar(){
-    cout<<"Desde Taquero "<<lugar<<endl;
+void Wizard::mostrarLugar(){
+    cout<<"Desde Wizard "<<lugar<<endl;
 }
 /*
-void Taquero::tacoAsada(){
-    cout<<"tacoAsada"<<endl;
+void Wizard::crear(){
+    cout<<"crear"<<endl;
 }
-void Taquero::tacoFrijol(){
+void Wizard::tacoFrijol(){
     cout<<"tacoFrijol"<<endl;
 }
 
-void Taquero::caramelo(){
+void Wizard::caramelo(){
     cout<<"Caramelo"<<endl;
 }
 
-int Taquero::getPedido(string pedido){
+int Wizard::getPedido(string pedido){
     cout<<pedido<<endl;
 }
 */

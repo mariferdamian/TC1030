@@ -20,5 +20,5 @@ Pocion::Pocion( int t){
 }
 
 void Pocion::display(){
-    cout<<tipo<<endl;
+    cout<<"poción "<<tipo<<endl;
 }

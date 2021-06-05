@@ -5,10 +5,8 @@
 using namespace std;
 class Personaje{
     public:
-        
            
-         
-        virtual void mostrarLugar();
+        virtual void displayHouse();
         // aquí meteré items
         void addVarita();
         void addPocion();
@@ -16,14 +14,14 @@ class Personaje{
 
 
     protected:
-        int lugar;
+        string house;
         vector <Item*> vectorInventario;
         
 };
 
 
-void Personaje::mostrarLugar(){
-    cout<<"Desde personaje "<<lugar<<endl;
+void Personaje::displayHouse(){
+    cout<<"Desde personaje "<<house<<endl;
 }
 
 // Aquí meteré items
