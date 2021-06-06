@@ -9,10 +9,11 @@ class Varita: public Item{
 
     protected:
         int tipo; // Varita de enseñanza, creadora, destructora, arregladora
-
+        int level;
 };
 
 Varita::Varita(){
+    // if (level == 1)
     tipo = 1;
 
 }

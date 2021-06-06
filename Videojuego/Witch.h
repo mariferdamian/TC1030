@@ -12,9 +12,9 @@ class Witch: public Personaje{
 };
 
 Witch::Witch(){
-    house = "";
+    house = "Ravenclaw";
 }
 void Witch::displayHouse(){
-    cout<<"Witch se encuentra en "<<house<<endl;
+    cout<<"Witch está en el Common Room de "<<house<<endl;
 }
 
