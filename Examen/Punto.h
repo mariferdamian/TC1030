@@ -1,8 +1,6 @@
 #ifndef Punto_h
 #define Punto_h
 
-#include <string>
-using namespace std;
 
 class Punto {
 private:
@@ -29,9 +27,8 @@ Punto::Punto(int valX, int valY) {
 }
 
 string Punto::mostrar() {  // VIRTUAL only in declaration
-    string valX = stoi(x);
-    string valY = stoi(y);
-    cout<<"Coodenadas del punto x: "<<valX<<" y: "<<valY<<endl;
+    string valX = to_string(x);
+    string valY = to_string(y);
     string coordenadas = "Coodenadas del punto x: " + valX + " y: "+ valY;
     return coordenadas;
 }

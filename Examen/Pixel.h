@@ -1,7 +1,6 @@
 #include "Punto.h"
 
-#include <string>
-using namespace std;
+
 
 //Punto
 class Pixel:public Punto {
@@ -22,10 +21,9 @@ Pixel::Pixel(int valX, int valY, string valColor):Punto(valX, valY){
    
 }
 string Pixel::mostrar(){
-    string valX = stoi(getValueX());
-    string valY = stoi(getValueY());
-    string valColor = color;
-    cout<<"Coodenadas del punto x: "<<valX<<" y: "<<valY<<endl;
-    string coordenadas = "Coodenadas del punto x: " + valX + " y: "+ valY + " color: "<<valColor;
+    string valX = to_string(getValueX());
+    string valY = to_string(getValueY());
+    
+    string coordenadas = "Coodenadas del punto x: " + valX + " y: "+ valY + " color: "+color;
     return coordenadas;
 }

@@ -1,7 +1,5 @@
 #include "Punto.h"
-using namespace std;
-#include <string>
-using namespace std;
+
 
 
 //Punto
@@ -23,10 +21,10 @@ Punto3D::Punto3D(int valX, int valY, int valZ):Punto(valX, valY){
 }
 
 string Punto3D::mostrar(){
-    string valX = stoi(getValueX());
-    string valY = stoi(getValueY());
-    string valZ = z;
-    cout<<"Coodenadas del punto x: "<<valX<<" y: "<<valY<<endl;
+    string valX = to_string(getValueX());
+    string valY = to_string(getValueY());
+    string valZ = to_string(z);
+    
     string coordenadas = "Coodenadas del punto x: " + valX + " y: "+ valY + " z: "+ valZ;
     return coordenadas;
 }
