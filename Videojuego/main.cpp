@@ -4,11 +4,19 @@
 #include <variant>
 #include "Witch.h"
 #include "Wizard.h"
-
+#include "CommonRoom.h"
 int main(){
-    
+  string nombres[]= {"slytherin" };
+  string descripciones[]= {"preguntas" };
+  string respuestas[]={"respuesta"};
+  vector<CommonRoom*> commonRooms;
+  for (int i =0; i< sizeof(descripciones)/sizeof(descripciones[0]); i++){
+    CommonRoom room(nombres[i], descripciones[i], respuestas[i]);
+    commonRooms.push_back(room);
+  }
+  
   vector<Personaje*> vectorPersonaje;
-  Personaje *objetoPersonaje;
+  Personaje* objetoPersonaje;
 
   objetoPersonaje = new Wizard();
   vectorPersonaje.push_back(objetoPersonaje);
